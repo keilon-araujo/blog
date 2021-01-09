@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://protocolodeinfra.netlify.app/"
 title   = "Protocolo de Infra"
 languageCode = "pt_br"
 theme = "hello-friend-ng"
@@ -55,7 +55,7 @@ disableHugoGeneratorInject = false
 
   # Metadata mostly used in document's head
   # 
-  description = "Nice theme for homepages and blogs"
+  description = "Testando"
   keywords = ""
   images = [""]
 
@@ -89,7 +89,7 @@ disableHugoGeneratorInject = false
 
   # Default theme "light" or "dark"
   #
-  defaultTheme = "dark"
+  defaultTheme = "light"
   themeColor = "#252627"
 
   # Custom footer 
