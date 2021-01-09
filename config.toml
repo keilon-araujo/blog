@@ -140,8 +140,8 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/keilon-rs-araujo"
 
   [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    name = "telegram"
+    url  = "https://t.me/keilon_araujo/"
 
 [languages]
   [languages.en]
@@ -157,7 +157,7 @@ disableHugoGeneratorInject = false
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "Sobre"
     url        = "about/"
   [[menu.main]]
     identifier = "posts"
