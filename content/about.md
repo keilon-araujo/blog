@@ -1,19 +1,9 @@
 +++
-title = "About"
-date = "2014-04-09"
+title = "Sobre o autor"
+date = "2021-01-08"
 aliases = ["about-us","about-hugo","contact"]
 [ author ]
-  name = "Hugo Authors"
+  name = "Sobre Keilon"
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
-
-It makes use of a variety of open source projects including:
-
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Keilon é um estudante de Redes de Computadores, atualmente está no último semestre do Curso. Possui certificação Cisco CCNA (Cisco Certified Network Associate) e é entusiasta GNU/Linux, o qual busca unir ao máximo o conhecimento dos dois mundo e neste blog mostrar um pouco do conhecimento e experiência adquiridos.

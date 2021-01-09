@@ -16,7 +16,8 @@ O protocolo IPv4 possui 32 bits de largura (de 0 a 31). Como cada byte tem 8 bit
 # Análise de Tráfego em Redes TCP/IP
 
 ## Cabeçalho IPv4
-~~~ shell
+
+```
 | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
 |    1 byte      |    2 byte     |   3 byte      |   4 byte      |
 | 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7 0 1 2 3 4 5 6 7|
@@ -33,7 +34,7 @@ O protocolo IPv4 possui 32 bits de largura (de 0 a 31). Como cada byte tem 8 bit
 | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
 |              Options                           | Padding       |
 | - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|
-~~~
+```
 
 
 * **Campo Version**
