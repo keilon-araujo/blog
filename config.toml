@@ -40,7 +40,7 @@ disableHugoGeneratorInject = false
   name = "Keilon R. S. Araujo"
 
 [blackfriday]
-  hrefTargetBlank = true
+  hrefTargetBlank = false
 
 [taxonomies]
   tag      = "tags"
