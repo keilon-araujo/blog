@@ -100,10 +100,10 @@ disableHugoGeneratorInject = false
 
   # Colors for favicons
   #
-  [params.favicon.color]
-    mask = "#252627"
-    msapplication = "#252627"
-    theme = "#252627"
+  #[params.favicon.color]
+  #  mask = "#252627"
+  #  msapplication = "#252627"
+  #  theme = "#252627"
 
   [params.logo]
     logoText     = "$ ./infra.sh"
@@ -145,7 +145,7 @@ disableHugoGeneratorInject = false
 
 [languages]
   [languages.en]
-    subtitle  = "Hello Friend NG Theme"
+    subtitle  = "Infraestrutura de Redes"
     weight    = 1
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
