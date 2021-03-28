@@ -14,7 +14,7 @@ Vamos realizar esta tarefa via terminal, ou seja, usando linhas de comando. Isto
 
 A ferramenta aqui usada será o `dd` que é um ferramenta de linha de comando que por padrão vem em todas as distribuições GNU/Linux e faz parte do pacote `coreutils`.
 
-Usando o comando `man` temos a seguinte saída para descrever o `dd`:
+Usando o comando `man` que é o manual, temos a seguinte saída para descrever o `dd`:
 
 
 ```
