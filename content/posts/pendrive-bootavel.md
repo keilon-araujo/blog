@@ -9,6 +9,13 @@ Para um usuário linux sem muita experiência em Linux criar um pen drive bootá
 
 ---
 
+[1. Requerimentos](#1. Requerimentos)
+
+
+
+### 1. Requerimentos
+
+
 
 Vamos realizar esta tarefa via terminal, ou seja, usando linhas de comando. Isto porque a partir de qualquer distribuição Linux será possível criar o pen drive bootável. 
 
