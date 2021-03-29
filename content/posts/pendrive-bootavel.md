@@ -98,3 +98,13 @@ use@dragon:~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | su
 2. Usar o comando ``sudo dd if=~/Downloads/debian-10.8.0-amd64-netinst.iso of=/dev/sdb`
 3. Caso deseje usar a barra de progresso deve ser instalado o `pv` e o comando `~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`
 
+
+
+> Vale lembrar que esta tarefa apagará todos os itens da unidade apontada para montagem do pen drive bootável, então faça um backup dos seus arquivos.
+
+
+
+
+
+
+
