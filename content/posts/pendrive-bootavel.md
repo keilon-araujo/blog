@@ -22,7 +22,7 @@ Para um usuário linux sem muita experiência em Linux criar um pen drive bootá
 
 [4. Usando o PV](#4. Usando o PV)
 
-[5. Resumo](#5. Resumo)
+[5.Resumo](#5.Resumo)
 
 
 
