@@ -22,7 +22,7 @@ Para um usuário linux sem muita experiência em Linux criar um pen drive bootá
 
 [4. Usando o PV](#4. Usando o PV)
 
-[5. Resumo]({{< ref "/posts/pendrive-bootavel.md" >}} "5. Resumo")
+[5. Resumo]
 
 
 
@@ -95,7 +95,7 @@ use@dragon:~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | su
 352321536 bytes (352 MB, 336 MiB) copiados, 1,38123 s, 255 MB/s
 ```
 
-### 5. Resumo
+### 5. Resumo {#5. Resumo}
 
 É bem simples a criação de um pen drive bootável usando este método, aqui um resumo:
 
