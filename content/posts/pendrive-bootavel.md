@@ -13,9 +13,11 @@ Para um usuário linux sem muita experiência em Linux criar um pen drive bootá
 
 [2. Listando as unidades disponíveis](#2. Listando as unidades disponíveis)
 
-[3. Formatando a unidade](#3. Formatando a unidade)
+[3. Criando o Pen Drive Bootável](#3. Criando o Pen Drive Bootável)
 
+[4. Usando o PV](#4. Usando o PV)
 
+[5. Resumo](#5. Resumo)
 
 
 
@@ -63,5 +65,36 @@ A saída do comando `lsblk` nos mostra duas unidades de disponíveis, `sda` e `s
 
 
 
-### 3. Formatando a unidade
+### 3. Criando o Pen Drive Bootável
+
+Agora que identificamos `/dev/sdb` como a unidade que vamos montar a imagem, vamos de fato montar botar a mão na massa.
+
+O comando será `sudo dd if=~/Downloads/debian-10.8.0-amd64-netinst.iso of=/dev/sdb`, onde `if=` é o arquivo de origem, ou seja, a ISO que baixamos, neste caso temos um `debian netinst`. `of=` é o caminho da unidade onde a imagem será montada, neste caso `/dev/sdb`. Caso esteja logado com usuário root não é necessário o `sudo` no início do comando.
+
+Após dar Enter no comando acima a tarefa seja executada e o prompt ficará ocupado e com o cursor piscando até que seja finalizado, caso nada de errado ocorra temos o pen drive bootável pronto para uso.
+
+### 4. Usando o PV
+
+Caso deseje acompanhar de forma dinâmica, o `pv` é uma solução que mostra uma barra de progresso da nossa tarefa. Ele não vem instalado por padrão na maioria das distribuições então pode ser necessário instalar com o comando `apt install pv` para distribuições debian-based.
+
+Com o PV o comando fica um pouco diferente, `~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`.
+
+Ao final da barra de progresso temos o pen drive pronto!
+
+```
+use@dragon:~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb
+
+ 336MiB 0:00:01 [ 242MiB/s] [============================================================>] 100%            
+688128+0 registros de entrada
+688128+0 registros de saída
+352321536 bytes (352 MB, 336 MiB) copiados, 1,38123 s, 255 MB/s
+```
+
+### 5. Resumo
+
+É bem simples a criação de um pen drive bootável usando este método, aqui um resumo:
+
+1. Identificar a unidade com `lsblk`
+2. Usar o comando ``sudo dd if=~/Downloads/debian-10.8.0-amd64-netinst.iso of=/dev/sdb`
+3. Caso deseje usar a barra de progresso deve ser instalado o `pv` e o comando `~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`
 
