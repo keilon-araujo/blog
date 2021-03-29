@@ -2,6 +2,11 @@
 title: "Conexão USB-Serial via Terminal no Linux"
 date: 2020-08-29T21:30:24-03:00
 draft: false
+tags:
+- Redes de computadores
+- USB-Serial
+- Linux
+- Terminal
 ---
 
 ---
