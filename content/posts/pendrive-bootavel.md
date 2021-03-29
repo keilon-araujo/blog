@@ -9,11 +9,17 @@ Para um usuário linux sem muita experiência em Linux criar um pen drive bootá
 
 ---
 
-[1. Requerimentos](#1. Requerimentos)
+[1. Overview](#1. Overview)
+
+[2. Listando as unidades disponíveis](#Listando as unidades disponíveis)
+
+[3. Formatando a unidade](#Formatando a unidade)
 
 
 
-### 1. Requerimentos
+
+
+### 1. Overview
 
 
 
