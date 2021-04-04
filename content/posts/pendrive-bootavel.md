@@ -101,7 +101,7 @@ use@dragon$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb
 
 1. Identificar a unidade com `lsblk`
 2. Usar o comando ``sudo dd if=~/Downloads/debian-10.8.0-amd64-netinst.iso of=/dev/sdb`
-3. Caso deseje usar a barra de progresso deve ser instalado o `pv` e o comando `~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`
+3. Caso deseje usar a barra de progresso deve ser instalado o `pv` e o comando `use@dragon$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`
 
 
 
