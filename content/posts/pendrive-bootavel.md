@@ -82,12 +82,12 @@ Após dar Enter no comando acima a tarefa seja executada e o prompt ficará ocup
 
 Caso deseje acompanhar de forma dinâmica, o `pv` é uma solução que mostra uma barra de progresso da nossa tarefa. Ele não vem instalado por padrão na maioria das distribuições então pode ser necessário instalar com o comando `apt install pv` para distribuições debian-based.
 
-Com o PV o comando fica um pouco diferente, `~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`.
+Com o PV o comando fica um pouco diferente, `use@dragon$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb`.
 
 Ao final da barra de progresso temos o pen drive pronto!
 
 ```
-use@dragon:~/Documents/blog$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb
+use@dragon$ pv ~/Downloads/debian-10.8.0-amd64-netinst.iso | sudo dd of=/dev/sdb
 
  336MiB 0:00:01 [ 242MiB/s] [============================================================>] 100%            
 688128+0 registros de entrada
