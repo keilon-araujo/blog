@@ -27,9 +27,10 @@ Neste post vamos focar apenas na configuração do Radius em um Windows Server 2
 Dada a topologia acima, onde temos a rede onde está localizado o Windows Server e outras duas redes, a rede NOC que representa os usuários que tem apenas acesso de leitura e a rede Engineer, que possui usuário com acesso mais privilegiado.
 O dispositivo alvo é o roteador que está configurado com a arquitetura Router-on-a-Stick, onde ele é o gateway de todas as redes e faz o roteamento inter-vlan. É nele que faremos a configuração para que os usuários se autentiquem no Radius Server.
 Temos as seguintes interfaces no router:
-* WAN: 192.168.77.11
-* VLAN10: 172.16.10.1
-* VLAN20: 172.16.20.1
-* VLAN30: 172.16.30.1
-
+```
+ WAN: 192.168.77.11
+ VLAN10: 172.16.10.1
+ VLAN20: 172.16.20.1
+ VLAN30: 172.16.30.1
+```
 
