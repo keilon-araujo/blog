@@ -39,3 +39,6 @@ Vamos para o Windows Server 2012, onde iremos instalar o Network Policy Server (
 
 ![NPS-Install](https://raw.githubusercontent.com/keilon-araujo/posts/master/NPS-Install.png)
 
+Para este Lab é necessário criar dois grupos de usuários no Windows: GRP-N3 para privilege 15 e GRP-N1 para privilege 1. Para o GRP-N3 temos o usuário engineer e para GRP-N1 o usuário noc.
+
+Agora é o momento de criar as policies que serão os níveis de permissão de acesso. Para simplificar teremos apenas dois tipos de acesso: privilege=1 para o NOC e privilege=15 para os engineers. Para iniciar vamos abrir o Dashboard do Network Policy Server e em Policies, clicar com botão direto e depois em New.
