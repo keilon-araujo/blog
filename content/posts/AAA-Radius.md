@@ -35,5 +35,7 @@ Temos as seguintes interfaces no router:
 
 Para este exemplo, cada rede de origem terá um tipo de permissão diferente. Mas a granularidade de configuração no RADIUS permite que essa definição seja feita baseada em grupos de usuários, como veremos mais à frente.
 
+Vamos para o Windows Server 2012, onde iremos instalar o Network Policy Server (NPS) que permitirá usar o RADIUS. Basta ir até o *Server Manager DashBoard*, clicar em  *Add Roles and Features* e em *Server Roles* selecionar a opção *Network Policy and Access Services* e clicar em *Next* até finalizar todas as opções. Feito isso já temos disponível nosso Radius Server.
 
+![NPS-Install](https://raw.githubusercontent.com/keilon-araujo/posts/master/NPS-Install.png)
 
