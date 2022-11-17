@@ -42,3 +42,37 @@ Vamos para o Windows Server 2012, onde iremos instalar o Network Policy Server (
 Para este Lab é necessário criar dois grupos de usuários no Windows: GRP-N3 para privilege 15 e GRP-N1 para privilege 1. Para o GRP-N3 temos o usuário engineer e para GRP-N1 o usuário noc.
 
 Agora é o momento de criar as policies que serão os níveis de permissão de acesso. Para simplificar teremos apenas dois tipos de acesso: privilege=1 para o NOC e privilege=15 para os engineers. Para iniciar vamos abrir o Dashboard do Network Policy Server e em Policies, clicar com botão direto e depois em New.
+
+![new](https://raw.githubusercontent.com/keilon-araujo/posts/master/new.png)
+
+Com a nova janela aberta, em *Overview*, vamos dar o nome à policy (PRIV-15_policy) e marcar a opcão *Policy enabled* e *Grant Access*, para que a política seja criada e seja habilitada. 
+
+![overview](https://raw.githubusercontent.com/keilon-araujo/posts/master/Overview.png)
+
+Na aba *Conditions* vamos clicar em *Add* e depois e selecionar *Windows Groups*, para nosso Lab teremos dois grupos, neste momento vamos adicionar somente o GRP-N3, que terá privilégio total ao router.
+
+![conditions](https://raw.githubusercontent.com/keilon-araujo/posts/master/conditions.png)
+
+Na aba *Constraints*, neste momento é interessante alterar apenas o campo de *Authentication Methods* e deixar marcado apenas  a opcão *Unecrypted authentication (PAP, SPAP)*.
+
+![constraints](https://raw.githubusercontent.com/keilon-araujo/posts/master/constraints.png)
+
+Na aba *Settings* teremos as configuracões de RADIUS, em *Standard* vamos usar o *Attribute Service-Type Login*.
+
+![standard](https://raw.githubusercontent.com/keilon-araujo/posts/master/Standard.png)
+
+
+Em *Vendor Specific* vamos deixar os atributos como mostrados abaixo, que dará ao grupo GRP-N3 o acesso ao roteador com privilégio level 15. Feito isso a configuracão no Radius está pronta.
+
+![vendor](https://raw.githubusercontent.com/keilon-araujo/posts/master/vendor-specific.png)
+
+Para adicionar o grupo GRP-N1 basta seguir os mesmo passos alterando apenas o grupo adicionado e o shell privilege que será lelvel 1.
+
+Criadas as políticas de acesso é hora de adicionar os Radius clientes, que serão os dispositivos que faram as solicitacões de validacão de credenciais. Neste caso o nosso router.
+
+Para isto, basta expandir o menu *RADIUS Clients and Server* e em *RADIUS Clients* clicar com botão direito em *New*, aqui teremos que marcar a checkbox "Enable this RADIUS client", dar um nome ao dispositivo e depois adicionar o IP abaixo. Aqui o item mais importante é "Shared secret" que é a chave compartilhada entre o RADIUS Server e o client, essa mesma chave será configurada no router.
+Na aba *Advanced*, em *Vendor name* vamos alterar para *Cisco*.
+Aqui a configuracão do Radius Server está pronta.
+
+![client](https://raw.githubusercontent.com/keilon-araujo/posts/master/R-client-settings.png)
+
