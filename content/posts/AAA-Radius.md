@@ -85,7 +85,7 @@ aaa group server radius GRP-RADIUS
  ip radius source-interface Ethernet0/1
 !
 aaa authentication login VTY_ACCESS group GRP-RADIUS local
-aaa authorization exec default group GRP-RADIUS if-authenticated
+aaa authorization exec default group GRP-RADIUS local if-authenticated
 !
 username admin.local privilege 15 password 7 133112011F5D5679
 !
@@ -99,4 +99,4 @@ line vty 0 4
 !
 ~~~
 
-O *aaa authorization exec default group GRP-RADIUS if-authenticated* garante que o nível de privilégio criado na política do NPS será aplicado, caso contrário, o usuário autenticado teria o privilégio 1.
+O *aaa authorization exec default group GRP-RADIUS local if-authenticated* garante que o nível de privilégio criado na política do NPS será aplicado, caso contrário, o usuário autenticado teria o privilégio 1.
