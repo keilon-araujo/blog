@@ -90,7 +90,7 @@ aaa authorization exec default group GRP-RADIUS if-authenticated
 username admin.local privilege 15 password 7 133112011F5D5679
 !
 radius server NPS-01
- address ipv4 xxx.xxx.xxx.xxx auth-port 1812 acct-port 1813
+ address ipv4 172.16.10.2 auth-port 1812 acct-port 1813
  key 7 0812494D1B1C11464058
 !
 line vty 0 4
