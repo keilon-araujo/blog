@@ -1,6 +1,6 @@
 ---
 title: "Cisco - AAA usando RADIUS Windows Server 2012"
-date: 2022-11-15T15:55:24-03:00
+date: 2025-19-15T01:05:24-03:00
 draft: false
 tags:
 - Redes de computadores
@@ -76,3 +76,27 @@ Aqui a configuracão do Radius Server está pronta.
 
 ![client](https://raw.githubusercontent.com/keilon-araujo/posts/master/R-client-settings.png)
 
+A configuração no switch é a seguinte:
+
+~~~
+!
+aaa group server radius GRP-RADIUS
+ server name NPS-01
+ ip radius source-interface Ethernet0/1
+!
+aaa authentication login VTY_ACCESS group GRP-RADIUS local
+aaa authorization exec default group GRP-RADIUS if-authenticated
+!
+username admin.local privilege 15 password 7 133112011F5D5679
+!
+radius server NPS-01
+ address ipv4 192.168.77.66 auth-port 1812 acct-port 1813
+ key 7 0812494D1B1C11464058
+!
+line vty 0 4
+ login authentication VTY_ACCESS
+ transport input ssh
+!
+~~~
+
+O *aaa authorization exec default group GRP-RADIUS if-authenticated* garante que o nível de privilégio criado na política do NPS será aplicado, caso contrário, o usuário autenticado teria o privilégio 1.
