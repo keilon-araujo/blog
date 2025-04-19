@@ -99,4 +99,4 @@ line vty 0 4
 !
 ~~~
 
-O *aaa authorization exec default group GRP-RADIUS local if-authenticated* garante que o nível de privilégio criado na política do NPS será aplicado, caso contrário, o usuário autenticado teria o privilégio 1.
+O *aaa authorization exec default group GRP-RADIUS local if-authenticated* garante que o nível de privilégio criado na política do NPS será aplicado e também à conta local admin.local (em caso de perda de conectividade com servidor Radius), caso contrário, o usuário autenticado teria o privilégio 1.
