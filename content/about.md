@@ -6,4 +6,4 @@ aliases = ["about-us","about-hugo","contact"]
   name = "Sobre Keilon"
 +++
 
-Keilon é um estudante de Redes de Computadores, atualmente está no último semestre do Curso. Possui certificação Cisco CCNA (Cisco Certified Network Associate) e é entusiasta GNU/Linux, o qual busca unir ao máximo o conhecimento dos dois mundo e neste blog mostrar um pouco do conhecimento e experiência adquiridos.
+Keilon é um estudante de Redes de Computadores, atualmente está no último semestre do Curso. Possui certificação Cisco CCNA (Cisco Certified Network Associate) e é entusiasta GNU/Linux, o qual busca unir ao máximo o conhecimento dos dois mundo e neste blog mostrar um pouco do conhecimento e experiência adquiridos. Ultimamente tem sido pouco alimentado mas isto pode mudar logo, logo.
